@@ -1,5 +1,6 @@
 import React, { useState, useRef , useMemo } from 'react';
 import './App.css'
+import urls from './urls';
 
 
 const App = () => {
@@ -44,12 +45,29 @@ const App = () => {
     fileInputRef.current.click();
   };
 
-  const handleApply = () => {
-    console.log('Form Data:', {
+  const handleApply =async () => {
+    console.log('Sending form data:', {
       videoFile: videoFile.name,
       senderEmail,
       receiverEmail,
     });
+    const formData = new FormData();
+    formData.append('videoFile', videoFile); 
+    formData.append('senderEmail', senderEmail);
+    formData.append('receiverEmail', receiverEmail);
+  
+  
+    try {
+      const response = await axios.post(urls.API_URL, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+  
+      console.log('Server response:', response.data);
+    } catch (error) {
+      console.log('Error submitting form:', error);
+    }
   };
 
   return (
