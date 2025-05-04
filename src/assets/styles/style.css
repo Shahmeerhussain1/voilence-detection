@@ -1,0 +1,93 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+
+#landingPage{
+/* body { */
+  margin: 0;
+  padding: 0;
+  font-family: "Zen Dots", serif;
+  background: linear-gradient(135deg, #2c2c2c, #3a3a3a);
+  color: #fff;
+  text-align: center;
+  background-image: url('/images/homebg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+/* } */
+
+.container {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #f97300;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  /* Adds spacing between letters */
+}
+
+h1 span {
+  color: #f97300;
+}
+
+h2 span {
+  color: #f97300;
+}
+
+h1 br {
+  display: block;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 20%;
+  height: auto;
+}
+
+}

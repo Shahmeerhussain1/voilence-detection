@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+#videoManage {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Dots", serif;
+    background-image: url('/images/home1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+
+
+.navbar {
+    width: 95%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+.navbar .menu a:hover {
+    color: #f90;
+}
+
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+    width: 50%;
+}
+
+.camera-tile {
+    background: #444;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.camera-tile .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+}
+
+.camera-tile .header .name {
+    font-size: 1em;
+}
+
+.camera-tile .header .hide-button {
+    font-size: 0.9em;
+    color: #f90;
+    cursor: pointer;
+}
+
+.camera-tile .footer {
+    padding: 10px;
+    /* background: #555;  */
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.disconnect {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.disconnect:hover {
+    background: #ff6a00;
+}
+}

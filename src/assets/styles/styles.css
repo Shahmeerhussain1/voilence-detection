@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+#Signup {
+  /* body { */
+  margin: 0;
+  font-family: "Zen Dots", serif;
+  background-image: url('/images/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+ 
+
+
+
+.right-section {
+    flex: 2;
+    /* background: #1f1f2e; */
+    padding: 100px;
+    margin-left: 200px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .header img {
+    width: 150px;
+  }
+
+  .language-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-left: 45%;
+
+  }
+
+  p {
+    margin-bottom: 30px;
+    color: #aaa;
+    margin-left: 48%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45%;
+  }
+
+  .form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .form-group input,
+  .form-group select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #242432;
+    color: white;
+    font-size: 14px;
+  }
+
+  .password-tips ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 35%;
+  }
+
+  .register-btn,
+  .login-btn {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .register-btn {
+    background: #f97300;
+    color: white;
+  }
+
+  .login-btn {
+    background: transparent;
+    border: 1px solid #f97300;
+    color: #f97300;
+  }
+
+  .register-btn:hover {
+    background: #e86200;
+  }
+
+  .login-btn:hover {
+    background: #f97300;
+    color: white;
+  }
+}

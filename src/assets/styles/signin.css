@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+#login {
+  /* body { */
+  margin: 0;
+  padding: 0;
+  font-family: "Zen Dots", serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-image: url('/images/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+  /* } */
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-top: 50px;
+  }
+
+  .robot {
+    background: #282828;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .robot-image {
+    width: 150px;
+  }
+
+  .login-form {
+    padding: 2rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo h1 {
+    color: #ffa500;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #1e1e1e;
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: #888;
+  }
+
+  .forgot-password {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    color: #ffa500;
+    text-decoration: none;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffa500;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background: #cc8400;
+  }
+
+  a {
+    color: #ffa500;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p a {
+    font-weight: bold;
+  }
+}
